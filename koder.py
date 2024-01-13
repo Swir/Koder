@@ -30,17 +30,19 @@ class EncodingThread(QThread):
 class XORApp(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.initUI()
+        self.init_ui()
 
-    def initUI(self):
+    def init_ui(self):
         self.setWindowTitle("Swirtv Encoder/Decoder")
         self.setGeometry(100, 100, 400, 250)
         self.central_widget = QWidget()
         self.setCentralWidget(self.central_widget)
 
         layout = QVBoxLayout()
+
         self.input_label = QLabel("Select a file:")
         layout.addWidget(self.input_label)
+
         self.input_line = QLineEdit()
         layout.addWidget(self.input_line)
 
@@ -49,8 +51,9 @@ class XORApp(QMainWindow):
         self.browse_button.setStyleSheet("background-color: #FF5733; color: black;")
         layout.addWidget(self.browse_button)
 
-        self.key_label = QLabel(" 4 cyfrowy Klucz (4 characters):")
+        self.key_label = QLabel("4-digit Key (4 characters):")
         layout.addWidget(self.key_label)
+
         self.key_line = QLineEdit()
         layout.addWidget(self.key_line)
 
@@ -84,7 +87,7 @@ class XORApp(QMainWindow):
         key = self.key_line.text()
 
         if len(key) != 4:
-            self.show_message("Error", "klucz musi byc 4 cyfrowy.")
+            self.show_message("Error", "Key must be 4 characters long.")
             return
 
         output_file = input_file + '.swirtv'
@@ -101,7 +104,7 @@ class XORApp(QMainWindow):
         key = self.key_line.text()
 
         if len(key) != 4:
-            self.show_message("Error", "klucz musi byc 4 cyfrowy.")
+            self.show_message("Error", "Key must be 4 characters long.")
             return
 
         output_file = input_file[:-6]
@@ -128,7 +131,6 @@ class XORApp(QMainWindow):
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-    
     window = XORApp()
     window.show()
     sys.exit(app.exec_())
