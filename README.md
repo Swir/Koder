@@ -2,78 +2,72 @@
 
 # 🔐 Koder — Swirtv Encoder / Decoder
 
-**Simple PyQt5 desktop file encoder/decoder using a repeating XOR key**  
-**Prosty desktopowy koder/dekoder plików PyQt5 wykorzystujący powtarzający się klucz XOR**
+### PyQt5 Desktop File Encoder & Decoder with Custom `.swirtv` Output
+
+**Python • PyQt5 • XOR • Binary Files • Background Worker**
 
 ![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)
 ![PyQt5](https://img.shields.io/badge/GUI-PyQt5-41CD52?logo=qt&logoColor=white)
-![Format](https://img.shields.io/badge/output-.swirtv-ff4fa3)
-![Author](https://img.shields.io/badge/Author-Swir-8A2BE2)
+![Format](https://img.shields.io/badge/Output-.swirtv-ff4fa3)
+![Status](https://img.shields.io/badge/Type-Educational%20Utility-orange)
 
 </div>
 
 ---
 
-## 🇬🇧 English
+## 🚀 About
 
-Koder is a lightweight desktop utility for reversible file transformation. The user selects a file, enters a four-character key and can encode it into a `.swirtv` file or decode it again using the same key.
+**Koder** is a lightweight PyQt5 desktop utility for reversible file transformation. Select a text or binary file, enter a four-character key and encode it into a custom `.swirtv` file. Use the same key to decode it back.
 
-It is useful as a small **PyQt5 file encoder**, **XOR encoder/decoder**, **Python desktop utility**, or educational project demonstrating reversible binary-file transformation.
+It is useful as a small **PyQt5 file encoder**, **XOR encoder/decoder**, **Python binary file utility** or educational project demonstrating reversible byte transformation.
 
-### ✨ Features
-- graphical PyQt5 interface
-- works with text and binary files
-- encode and decode operations
-- four-character user key
-- background worker thread to keep the GUI responsive
-- `.swirtv` output extension
+---
 
-### 🚀 Run
+## ✨ Features
+
+| Feature | Description |
+|---|---|
+| 📂 File selection | Work with text and binary files |
+| 🔐 Encode | Transform a file with a repeating XOR key |
+| 🔓 Decode | Reverse the transformation using the same key |
+| 🔑 Custom key | Four-character user-provided key |
+| 🧵 Background worker | Keeps the GUI responsive during file operations |
+| 📦 `.swirtv` output | Uses a custom file extension for encoded data |
+| 🖥️ PyQt5 GUI | Simple desktop interface |
+
+---
+
+## 📦 Installation
+
 ```bash
+git clone https://github.com/Swir/Koder.git
+cd Koder
 pip install -r requirements.txt
 python koder.py
 ```
 
-> **Security note:** XOR is suitable for experimentation and simple reversible obfuscation, but it is not modern cryptographic encryption. Do not use this program to protect sensitive data.
+---
+
+## ⚠️ Security Note
+
+This project uses XOR-based reversible transformation. XOR is useful for learning and simple obfuscation, but it is **not modern cryptographic encryption**. Do not rely on this application to protect passwords, private documents or other sensitive data.
 
 ---
 
-## 🇵🇱 Polski
+## 🔍 Discoverability
 
-Koder to lekkie narzędzie desktopowe do odwracalnego kodowania plików. Użytkownik wybiera plik, podaje czteroznakowy klucz, a następnie może zapisać zakodowaną wersję jako `.swirtv` lub przywrócić oryginał przy użyciu tego samego klucza.
-
-Projekt może zainteresować osoby szukające **kodera plików PyQt5**, **enkodera/dekodera XOR**, prostego narzędzia desktopowego Python lub przykładu odwracalnej transformacji plików binarnych.
-
-### ✨ Funkcje
-- interfejs graficzny PyQt5
-- obsługa plików tekstowych i binarnych
-- kodowanie i dekodowanie
-- czteroznakowy klucz użytkownika
-- operacje wykonywane w osobnym wątku
-- własne rozszerzenie `.swirtv`
-
-### 🚀 Uruchomienie
-```bash
-pip install -r requirements.txt
-python koder.py
-```
-
-> **Uwaga dotycząca bezpieczeństwa:** XOR nadaje się do nauki i prostej odwracalnej obfuskacji, ale nie jest współczesnym szyfrowaniem. Nie używaj programu do ochrony poufnych danych.
+`python file encoder` • `pyqt5 file encoder` • `xor encoder decoder` • `python file decoder` • `binary file obfuscation` • `desktop file encoder` • `xor gui python` • `swirtv encoder`
 
 ---
 
-## 🔎 Discoverability / Keywords
+## 👨‍💻 Author
 
-`python` · `pyqt5` · `file encoder` · `file decoder` · `xor` · `xor encoder` · `desktop utility` · `binary files` · `file obfuscation` · `swirtv`
+Developed by **Swir** — [@Swir](https://github.com/Swir)
 
-## 📁 Structure / Struktura
-```text
-Koder/
-├── koder.py
-├── requirements.txt
-├── file exe/
-└── README.md
-```
+<div align="center">
 
-## 👤 Author / Autor
-Developed by **Swir**.
+### 🔐 Encode • Decode • Experiment
+
+⭐ **Star the repository if you find it useful!**
+
+</div>
