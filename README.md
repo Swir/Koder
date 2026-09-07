@@ -18,6 +18,8 @@
 
 Koder is a lightweight desktop utility for reversible file transformation. The user selects a file, enters a four-character key and can encode it into a `.swirtv` file or decode it again using the same key.
 
+It is useful as a small **PyQt5 file encoder**, **XOR encoder/decoder**, **Python desktop utility**, or educational project demonstrating reversible binary-file transformation.
+
 ### ✨ Features
 - graphical PyQt5 interface
 - works with text and binary files
@@ -40,6 +42,8 @@ python koder.py
 
 Koder to lekkie narzędzie desktopowe do odwracalnego kodowania plików. Użytkownik wybiera plik, podaje czteroznakowy klucz, a następnie może zapisać zakodowaną wersję jako `.swirtv` lub przywrócić oryginał przy użyciu tego samego klucza.
 
+Projekt może zainteresować osoby szukające **kodera plików PyQt5**, **enkodera/dekodera XOR**, prostego narzędzia desktopowego Python lub przykładu odwracalnej transformacji plików binarnych.
+
 ### ✨ Funkcje
 - interfejs graficzny PyQt5
 - obsługa plików tekstowych i binarnych
@@ -57,6 +61,10 @@ python koder.py
 > **Uwaga dotycząca bezpieczeństwa:** XOR nadaje się do nauki i prostej odwracalnej obfuskacji, ale nie jest współczesnym szyfrowaniem. Nie używaj programu do ochrony poufnych danych.
 
 ---
+
+## 🔎 Discoverability / Keywords
+
+`python` · `pyqt5` · `file encoder` · `file decoder` · `xor` · `xor encoder` · `desktop utility` · `binary files` · `file obfuscation` · `swirtv`
 
 ## 📁 Structure / Struktura
 ```text
